@@ -12,6 +12,7 @@
  */
 
 use App\Task;
+use Illuminate\Http\Request;
 
 Route::get('/', function () {
     $tasks = Task::orderBy("created_at", "asc")->get();
